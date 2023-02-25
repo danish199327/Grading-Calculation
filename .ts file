@@ -1,0 +1,16 @@
+import promptSync from 'prompt-sync';
+const prompt = promptSync();
+let userInput = parseInt(prompt("Please Enter the percent ")!);
+if (userInput >= 80 && userInput <=100){
+    console.log("A+");
+} else if(userInput >= 70 && userInput <= 80) {
+    console.log("A");
+} else if(userInput >= 60 && userInput <=70) {
+    console.log("B");
+} else if(userInput >= 50 && userInput <= 60) {
+    console.log("C");
+} else if(userInput>= 40 && userInput <= 50) {
+    console.log("D");
+} else {
+    console.log("Sorry! You are fail");
+}
